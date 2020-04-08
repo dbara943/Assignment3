@@ -1,3 +1,208 @@
-html{
-    margin: 20px;
+:root {
+    --side: #0253b3;
+    --nav: #333;
+    --foot: blue;
+    --notAct: #111;
+    --Act: #3366cc;
+    --grid: lightgray;
+}
+
+body {
+    font-size: 16px;
+    background-color: #7395AE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 100px;
+    background-color: #557A95;
+}
+
+#a {
+    grid-row: 1;
+    grid-column: 1/2;
+}
+
+#b {
+    grid-row: 1;
+    grid-column: 2/3;
+}
+
+#c {
+    grid-row: 2;
+    grid-column: 1/2;
+}
+
+#d {
+    grid-row: 2;
+    grid-column: 2/3;
+}
+
+#e {
+    grid-row: 3;
+    grid-column: 1/2;
+}
+
+#f {
+    grid-row: 3;
+    grid-column: 2/3;
+}
+
+footer {
+    background-color: #B1A296;
+    position: absolute;
+    bottom: auto;
+    width: 100%;
+    height: 2.5rem;
+}
+
+header {
+    display: grid;
+    background-color: #5D5C61;
+    height: 100px;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--nav);
+    width: 100%;
+}
+
+.navbar li {
+    float: left;
+    width: 25%;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 45px 169px;
+    text-decoration: none;
+}
+
+.navbar li a:hover:not(.active) {
+    background-color: var(--notAct);
+}
+
+.navbar li a.active {
+    background-color: var(--Act);
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+ol, ul {
+    list-style-type: disc;
+}
+
+section {
+    padding: 30px;
+}
+
+#Daniel {
+    width: 500px;
+}
+
+fieldset {
+    width: 40%;
+    height: 30%;
+    text-align: center;
+    margin-left: 30%;
+    padding: 10px;
+}
+
+#submit {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input:required, textarea {
+    border-color: red;
+    border-width: 1px;
+}
+
+.required:after {
+    content: " *";
+    color: red;
+    display: inline;
+}
+
+.button {
+    padding: 15px 32px;
+    margin-left: auto;
+    margin-right: -22%;
+}
+
+@media screen and (max-width: 720px) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 10px;
+    }
+    h1 {
+        text-align: center;
+    }
+    #a {
+        grid-row: 1;
+        grid-column: 1;
+        width: 100%;
+    }
+    #b {
+        grid-row: 2;
+        grid-column: 1;
+        width: 100%;
+    }
+    #c {
+        grid-row: 3;
+        grid-column: 1;
+        width: 100%;
+    }
+    #d {
+        grid-row: 4;
+        grid-column: 1;
+        width: 100%;
+    }
+    #e {
+        grid-row: 5;
+        grid-column: 1;
+        width: 100%;
+    }
+    #f {
+        grid-row: 6;
+        grid-column: 1;
+        width: 100%;
+    }
+    #Daniel {
+        width: 100%;
+    }
+    section {
+        padding: 0;
+    }
+    .navbar li {
+        width: 100%;
+    }
+    #main {
+        margin-top: auto;
+    }
+    header {
+        height: 12%;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 }

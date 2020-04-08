@@ -1,5 +1,142 @@
 <!DOCTYPE html>
-<html>
-<!DOCTYPE html>
-<html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Online Portfolio">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Daniel Baranowski">
+    <link rel="stylesheet" type="text/css" href="style/reset.css">
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#a">About Me</a></li>
+                <li><a href="#c">Work Experience</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#form">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="a">
+            <h1>About Me</h1>
+            <img id="Daniel" src="images/Daniel.png" alt="A picture of me" height="300px" width="100px">
+        </section>
+        <section id="b">
+            <h5>Education</h5>
+            <p>
+                Bachelor of Computer Information Systems - Mount Royal University Sep 2018 - Present
+                <br>
+                Anticipated graduation: 2023.
+                <br>
+                Created a professional car dealership website using Notepad++ and programming languages HTML and CSS for
+                a web school project.
+            </p>
+        </section>
+        <section id="c">
+            <h5>Work Experience</h5>
+            <p>English Tutor, Self-employed, Warsaw Poland Jun 2019 - Jul 2019
+                <br>
+                Enhanced the life of 2 people by successfully preparing them for an English oriented job.
+                <br>
+                Improved the grades of a student by 10%.
+                <br>
+                <br>
+                Camp Instructor, CHRIS, Warsaw Poland May 2019 - Jun 2019
+                <br>
+                Cared for 150 kids by strongly encouraging them to participate in social events.
+                <br>
+                Received a monetary bonus and a praise for performance.
+                <br>
+                <br>
+                Cleaning Assistant, PB Global, Calgary AB Oct 2017 - May 2018
+                <br>
+                Advertised cleaning services and increased new customer count to 3 per week.
+                <br>
+                Increased communication skills by addressing customer inquiries and answering emails.
+            </p>
+        </section>
+        <section id="d">
+            <h5>Volunteer Experience</h5>
+            <p>
+                Volunteer, Students’ Association of Mount Royal University, Calgary AB Sep 2018 - Present
+                <br>
+                Fundraised $100 for Holiday fundraiser, meeting the program’s objectives.
+                <br>
+                Advertised a school program with the team to other students and recruited 5 other colleagues to join the
+                group.
+                <br>
+                <br>
+                Volunteer, LINKages Society of Alberta, Calgary AB Sep 2016 - May 2017
+                <br>
+                Cared for and improved the life of 3 seniors by helping them with their daily activities.
+                <br>
+                Participated and managed the bingo event in a group of 8 people.
+                <br>
+                <br>
+                Volunteer, Caritas Internationalis, Warsaw Poland Sep 2010 - Jun 2012
+                <br>
+                Assisted with gathering donations for children in Africa raising $500 over a period of 1 month.
+                <br>
+                Developed a kind attitude from a young age by volunteering in the free time.
+            </p>
+        </section>
+        <section id="e">
+            <h5>Skills</h5>
+            <ul>
+                <li>Used data analysis to increase traffic flow.</li>
+                <li>Used Adobe Photoshop to create YouTube thumbnails.</li>
+                <li>Basic knowledge of HTML.</li>
+                <li>Proficient in technical writing.</li>
+                <li>Proven leadership by managing a school project and assigning tasks.</li>
+            </ul>
+        </section>
+        <section id="f">
+            <h5>Hobbies</h5>
+            <ul>
+                <li>Making weekly YouTube videos since 2013.</li>
+                <li>Working out daily.</li>
+                <li>Playing strategic video games.</li>
+            </ul>
+        </section>
+        <section id="video">
+            <iframe width="100%" height="480" src="https://www.youtube.com/embed/BX4lQVhaT9E" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+    <form action="mailto:dbara943@mtroyal.ca" method="post" enctype="text/plain" id="form">
+        <fieldset>
+            <legend>Contact form</legend>
+            <label for="subject" class="required">Subject:</label>
+            <input name="subject" type="text" maxlength="25" id="subject" required />
+            <br>
+            <br>
+            <label for="email" class="required">Email:</label>
+            <input name="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="40"
+                placeholder="smith@gmail.com" id="email" required />
+            <br>
+            <br>
+            <label for="inquiry" class="required">Inquiry:</label>
+            <textarea name="inquiry" rows="5" cols="30" maxlength="250" minlength="20"
+                placeholder="Min 20, max 250 characters." id="inquiry" required></textarea>
+            <br>
+            <label id="center" for="submit">Click the Submit button to submit</label>
+            <input type="Submit" value="Submit" class="button" id="submit" />
+        </fieldset>
+    </form>
+    <footer>
+        <div>
+            <p>Created by Daniel Baranowski
+                Copyright &copy; by Daniel Baranowski
+                <a id="link" href="https://www.weebly.com/ca">LinkedIN</a></p>
+        </div>
+    </footer>
+</body>
+
 </html>
