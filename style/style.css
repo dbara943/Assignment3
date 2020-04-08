@@ -5,11 +5,17 @@
     --notAct: #111;
     --Act: #3366cc;
     --grid: lightgray;
+    --body: #7395AE;
+    --main: #557A95;
+    --footer: #B1A296;
+    --header: #5D5C61;
+    --navbarLi: white;
+    --required: red;
 }
 
 body {
     font-size: 16px;
-    background-color: #7395AE;
+    background-color: var(--body);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -18,7 +24,7 @@ main {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 100px;
-    background-color: #557A95;
+    background-color: var(--main);
 }
 
 #a {
@@ -52,7 +58,7 @@ main {
 }
 
 footer {
-    background-color: #B1A296;
+    background-color: var(--footer);
     position: absolute;
     bottom: auto;
     width: 100%;
@@ -61,7 +67,7 @@ footer {
 
 header {
     display: grid;
-    background-color: #5D5C61;
+    background-color: var(--header);
     height: 100px;
 }
 
@@ -81,7 +87,7 @@ header {
 
 .navbar li a {
     display: block;
-    color: white;
+    color: var(--navbarLi);
     text-align: center;
     padding: 45px 169px;
     text-decoration: none;
@@ -129,13 +135,13 @@ fieldset {
 }
 
 input:required, textarea {
-    border-color: red;
+    border-color: var(--required);
     border-width: 1px;
 }
 
 .required:after {
     content: " *";
-    color: red;
+    color: var(--required);
     display: inline;
 }
 
@@ -143,6 +149,14 @@ input:required, textarea {
     padding: 15px 32px;
     margin-left: auto;
     margin-right: -22%;
+}
+
+#link {
+    color: var(--required);
+}
+
+a:link {
+    color: var(--required);
 }
 
 @media screen and (max-width: 720px) {
